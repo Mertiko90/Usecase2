@@ -1,0 +1,26 @@
+System Report - Wed Sep  3 09:55:52 AM CEST 2025
+
+===== System Information =====
+Linux mert-yesilbas-VMware-Virtual-Platform 6.14.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Aug 14 16:52:50 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+===== Disk Usage =====
+/dev/sda2        20G   18G  1.3G  94% /
+/dev/sr0         90M   90M     0 100% /media/mert-yesilbas/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/mert-yesilbas/Ubuntu 24.04.2 LTS amd64
+
+===== Memory & CPU Usage =====
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi       1.6Gi        29Mi       1.1Gi       2.4Gi
+Swap:          3.7Gi          0B       3.7Gi
+
+CPU Load:
+0.00 0.00 0.00 1/712 5511
+
+===== Top 5 Prozesse nach Speicher =====
+    PID    PPID CMD                         %MEM %CPU
+   2612    2387 /usr/bin/gnome-shell         6.7  0.3
+   3836    3734 /home/mert-yesilbas/.vscode  3.7  0.4
+   3734    3730 /home/mert-yesilbas/.vscode  2.6  0.2
+   3094    2612 /usr/bin/Xwayland :0 -rootl  2.1  0.0
+   3410    2612 /usr/libexec/mutter-x11-fra  2.1  0.0
+
