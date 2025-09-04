@@ -55,10 +55,15 @@ echo ""
 # w -h listet die aktuell aktiven Benutzer auf und liefert Informationen zu Terminal, IP, Anmeldezeit, Inaktivitätsdauer (IDLE) und laufenden Anwendungen.#
 w -h | while read user tty ip login idle rest
 
+
+
 # TTY-Sitzung (Desktop): Die IP-Spalte ist leer oder "-", SSH-Sitzung: kein tty vorhanden, daher wurde die folgende Logik implementiert, um Verschiebungen zu vermeiden.
 do
+    
+     
         #Wenn die IP "-" ist, handelt es sich um eine TTY-Sitzung.
     if [[ "$ip" == "-" ]]; then
+        tty=$tty
         ip="-"
         login=$login
         idle=$idle
@@ -67,11 +72,11 @@ do
         #SSH-Sitzung
         ip=$tty
         tty="-"
-        login=$ip
+        login=$login
         idle=$login
         what=$rest
     fi
-
+    
     echo "Benutzer: $user"
     echo "Terminal: $tty"
     echo "IP Adresse: $ip"
@@ -79,6 +84,7 @@ do
     echo "IDLE-Zeit: $idle"
     echo "Aktive Anwendung: $what"
     echo "----------------------------------------"
+   
 done
 
 
